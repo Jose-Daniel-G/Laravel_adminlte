@@ -31,12 +31,12 @@ class User extends Authenticatable // AQUI ESTA DESACTIVADO
     protected $appends = ['profile_photo_url',];// ADMINLTE
 
 
-    public function curso(){      return $this->hasOne(Curso::class);}   // Uno a Uno
-    public function events(){     return $this->hasMany(Event::class);}  // Uno a Muchos
-    public function cliente(){    return $this->hasOne(Cliente::class);} // Uno a Uno
-    public function profesor(){   return $this->hasOne(Profesor::class, 'user_id');} // Uno a Uno
-    public function horarios(){   return $this->hasMany(Horario::class);}// Uno a Muchos
-    public function secretaria(){ return $this->hasOne(Secretaria::class);}// Uno a Uno
+    // public function curso(){      return $this->hasOne(Curso::class);}   // Uno a Uno
+    // public function events(){     return $this->hasMany(Event::class);}  // Uno a Muchos
+    // public function cliente(){    return $this->hasOne(Cliente::class);} // Uno a Uno
+    // public function profesor(){   return $this->hasOne(Profesor::class, 'user_id');} // Uno a Uno
+    // public function horarios(){   return $this->hasMany(Horario::class);}// Uno a Muchos
+    // public function secretaria(){ return $this->hasOne(Secretaria::class);}// Uno a Uno
 
     public function adminlte_image(){       return url($this->profile_photo_url); } // USER PICTURE
     public function adminlte_profile_url(){ return url('user/profile'); }

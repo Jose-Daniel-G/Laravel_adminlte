@@ -175,14 +175,8 @@ docker-compose exec laravel_app chmod -R 775 /var/www/html/storage /var/www/html
 
 docker build -t miapp-php .
 docker build -t miapp-php -f Dockerfile.php .
-```
----
-##### MISSING 
-- NEWS: delete, edit
-- COMMENTS: create, edit, delete
-- USERS: create, edit, delete
-- ROLES: Create: admin, writer, reader
+``` 
+![login](images/login.png)
+![image](images/image.png)
 
-##### NEXT STEP: COFFEE GARDEN ALBUM
-users, posts, categories 
 
